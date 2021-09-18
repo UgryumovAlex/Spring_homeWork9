@@ -1,5 +1,8 @@
 package ru.geekbrains.entities;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 
 @Entity
@@ -17,10 +20,7 @@ public class Product {
     @Column(name = "price")
     private int price;
 
-    public Product() {
-    }
-
-    public long getId() {
+     public long getId() {
         return id;
     }
 
@@ -44,12 +44,4 @@ public class Product {
         this.price = price;
     }
 
-    @Override
-    public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", price=" + price +
-                '}';
-    }
 }
