@@ -5,5 +5,6 @@ import org.springframework.stereotype.Repository;
 import ru.geekbrains.entities.Product;
 
 @Repository
-public interface Productrepository extends JpaRepository<Product, Long> {
+public interface ProductRepository extends JpaRepository<Product, Long> {
+
 }
